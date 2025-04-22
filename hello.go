@@ -29,6 +29,11 @@ func split(sum int) (x, y int) {
 	// "naked" return.
 	return
 }
+
+// The var statement declares a list of variables; as in function argument lists,
+// the type is last.
+var c, python, java bool
+
 func main() {
 	// Print Hello, World! to the console
 	fmt.Println("Hello, World!")
@@ -65,4 +70,7 @@ func main() {
 
 	// returns the split functionality
 	fmt.Println(split(17))
+
+	var i int
+	fmt.Println(i, c, python, java)
 }
