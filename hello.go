@@ -3,7 +3,8 @@ package main
 
 // Import packages
 import (
-	"fmt"  // ability to print
+	"fmt" // ability to print
+	"math/rand"
 	"time" // time
 )
 
@@ -13,4 +14,7 @@ func main() {
 
 	// Print the time
 	fmt.Println("The time is: ", time.Now())
+
+	// Pick a random number
+	fmt.Println("My favorite number is: ", rand.Intn(10))
 }
