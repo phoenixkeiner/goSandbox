@@ -72,14 +72,14 @@ func main() {
 	// returns the split functionality
 	fmt.Println(split(17))
 
-	var i int
-	// 0 false false false
-	fmt.Println(i, c, python, java)
+	// var i int
+	// // 0 false false false
+	// fmt.Println(i, c, python, java)
 
-	// 1 2 true false NO!
-	var c, python, java = true,
-		false, "NO!"
-	fmt.Println(n, j, c, python, java)
+	// // 1 2 true false NO!
+	// var c, python, java = true,
+	// 	false, "NO!"
+	// fmt.Println(n, j, c, python, java)
 
 	// name := "Phoenix"
 	// age := 25
@@ -88,4 +88,10 @@ func main() {
 	// var name string = "Phoenix"
 	// var age int = 25
 	// var active bool = true
+
+	var p, j int = 1, 2
+	k := 3
+	c, python, java := true, false, "no!"
+
+	fmt.Println(p, j, k, c, python, java)
 }
