@@ -9,6 +9,13 @@ import (
 	"time"      // time
 )
 
+// function to add 2 numbers
+// can also do add(x, y int) when two or more
+// consecutive named function parameters share a type
+func add(x int, y int) int {
+	return x + y
+}
+
 func main() {
 	// Print Hello, World! to the console
 	fmt.Println("Hello, World!")
@@ -35,4 +42,6 @@ func main() {
 
 	// print pi
 	fmt.Println(math.Pi)
+
+	fmt.Println(add(24, 12))
 }
