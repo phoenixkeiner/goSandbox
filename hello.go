@@ -32,4 +32,7 @@ func main() {
 	score := 92.5
 
 	fmt.Printf("Name: %s, Age: %d, Score: %.1f%%\n", name, age, score)
+
+	// print pi
+	fmt.Println(math.Pi)
 }
