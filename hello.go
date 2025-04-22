@@ -32,6 +32,7 @@ func split(sum int) (x, y int) {
 
 // The var statement declares a list of variables; as in function argument lists,
 // the type is last.
+var n, j int = 1, 2
 var c, python, java bool
 
 func main() {
@@ -72,5 +73,19 @@ func main() {
 	fmt.Println(split(17))
 
 	var i int
+	// 0 false false false
 	fmt.Println(i, c, python, java)
+
+	// 1 2 true false NO!
+	var c, python, java = true,
+		false, "NO!"
+	fmt.Println(n, j, c, python, java)
+
+	// name := "Phoenix"
+	// age := 25
+	// active := true
+	// This is equivalent to:
+	// var name string = "Phoenix"
+	// var age int = 25
+	// var active bool = true
 }
