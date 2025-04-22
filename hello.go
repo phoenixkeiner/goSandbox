@@ -3,9 +3,10 @@ package main
 
 // Import packages
 import (
-	"fmt" // ability to print
-	"math/rand"
-	"time" // time
+	"fmt"       // ability to print
+	"math"      // math...
+	"math/rand" // random number
+	"time"      // time
 )
 
 func main() {
@@ -17,4 +18,10 @@ func main() {
 
 	// Pick a random number
 	fmt.Println("My favorite number is: ", rand.Intn(10))
+
+	// %g format verb is used to formate a floating point number
+	fmt.Printf("Now you have %g problems. \n", math.Sqrt(7)) // calculates the sqaure root of 7
+
+	// Println is built in function, no formatting options, auto new line, mainly for debugging
+	// Printf comes from fmt package. Does not automatically add a newline unless you include \n
 }
