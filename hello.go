@@ -16,6 +16,19 @@ func add(x int, y int) int {
 	return x + y
 }
 
+func swap(x, y string) (string, string) {
+	return y, x
+}
+
+func split(sum int) (x, y int) {
+	x = sum * 4 / 9
+	y = sum - x
+
+	// A return statement without arguments returns
+	// the named return values. This is known as a
+	// "naked" return.
+	return
+}
 func main() {
 	// Print Hello, World! to the console
 	fmt.Println("Hello, World!")
@@ -43,5 +56,13 @@ func main() {
 	// print pi
 	fmt.Println(math.Pi)
 
+	// add two numbers
 	fmt.Println(add(24, 12))
+
+	// swap two words
+	a, b := swap("Hello", "Phoenix")
+	fmt.Println(a, b)
+
+	// returns the split functionality
+	fmt.Println(split(17))
 }
