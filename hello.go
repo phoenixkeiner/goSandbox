@@ -24,4 +24,12 @@ func main() {
 
 	// Println is built in function, no formatting options, auto new line, mainly for debugging
 	// Printf comes from fmt package. Does not automatically add a newline unless you include \n
+
+	fmt.Printf("Hello %s, you are %d years old.\n", "Phoenix", 28)
+
+	name := "Phoenix"
+	age := 25
+	score := 92.5
+
+	fmt.Printf("Name: %s, Age: %d, Score: %.1f%%\n", name, age, score)
 }
