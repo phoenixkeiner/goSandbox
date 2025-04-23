@@ -3,8 +3,9 @@ package main
 
 // Import packages
 import (
-	"fmt"       // ability to print
-	"math"      // math...
+	"fmt"  // ability to print
+	"math" // math...
+	"math/cmplx"
 	"math/rand" // random number
 	"time"      // time
 )
@@ -66,8 +67,8 @@ func main() {
 	fmt.Println(add(24, 12))
 
 	// swap two words
-	a, b := swap("Hello", "Phoenix")
-	fmt.Println(a, b)
+	a, aa := swap("Hello", "Phoenix")
+	fmt.Println(a, aa)
 
 	// returns the split functionality
 	fmt.Println(split(17))
@@ -92,6 +93,26 @@ func main() {
 	var p, j int = 1, 2
 	k := 3
 	c, python, java := true, false, "no!"
-
+	// 1 2 3 true false no!
 	fmt.Println(p, j, k, c, python, java)
+
+	// Complex numbers
+	var (
+		ToBe   bool       = false
+		MaxInt uint64     = 1<<64 - 1
+		z      complex128 = cmplx.Sqrt(-5 + 12i)
+	)
+	// Type: bool Value: false
+	// Type: uint64 Value: 18446744073709551615
+	// Type: complex128 Value: (2+3i)
+	fmt.Printf("Type: %T Value: %v\n", ToBe, ToBe)
+	fmt.Printf("Type: %T Value: %v\n", MaxInt, MaxInt)
+	fmt.Printf("Type: %T Value: %v\n", z, z)
+
+	// Variables declared without an explicit initial value are given their zero value.
+	var i int
+	var f float64
+	var b bool
+	var s string
+	fmt.Printf("%v %v %v %q\n", i, f, b, s)
 }
