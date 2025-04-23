@@ -115,4 +115,8 @@ func main() {
 	var b bool
 	var s string
 	fmt.Printf("%v %v %v %q\n", i, f, b, s)
+
+	// Chanding the value will change the type: "42", 42, 42.32
+	v := 42.32 // change me!
+	fmt.Printf("v is of type %T\n", v)
 }
